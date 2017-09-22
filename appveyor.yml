@@ -37,7 +37,7 @@ deploy:
   description: 'The ultimate game editor'
   provider: GitHub
   auth_token:
-    secure: 2e80f94685d82b4e97c03fa864ee5d5cc2d8b325 # your encrypted token from GitHub
+    secure: DLQOIGsW8ctzIrRwUKu6+ifjaAaHWGil1bs1lfzHgLwze4rcSQuQnpKga1VBQEdA # your encrypted token from GitHub
   artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
   draft: true
   prerelease: true

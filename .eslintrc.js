@@ -16,9 +16,11 @@ module.exports = {
     ],
     'rules'      : {
         // allow debugger during development
-        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-        'semi'       : 1,
-        'indent'     : [ 'error', 4 ],
-        'quotes'     : [ 'error', 'single', {'allowTemplateLiterals': true} ]
+        'no-debugger'          : process.env.NODE_ENV === 'production' ? 2 : 0,
+        'semi'                 : 1,
+        'indent'               : [ 'error', 4, {SwitchCase: 1} ],
+        'quotes'               : [ 'error', 'single', {'allowTemplateLiterals': true} ],
+        'prefer-arrow-callback': [ 'error' ],
+        'arrow-parens'         : [ 'error', 'always' ]
     }
 };

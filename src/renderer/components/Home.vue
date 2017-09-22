@@ -1,3 +1,10 @@
 <template>
-    <p>TIGER Editor</p>
+    <p> {{ $t("app.name") }}</p>
 </template>
+
+<style>
+    html, body {
+        background-color: #424242;
+        color: #fff;
+    }
+</style>
