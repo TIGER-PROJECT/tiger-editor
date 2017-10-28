@@ -22,14 +22,16 @@ init:
 install:
   - ps: Install-Product node 8.7 x64
   #- choco install yarn --ignore-dependencies
-  - choco install npm --ignore-dependencies
+  - npm install -g npm@latest
+  - set PATH=%APPDATA%\npm;%PATH%
   - git reset --hard HEAD
-  - yarn
+  #- yarn
+  - npm install
   - node --version
 
 build_script:
   #- yarn test
-  - npm run build
+  - yarn build
 
 test: off
 
