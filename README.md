@@ -4,8 +4,12 @@
   <br>
   TIGER Editor
   <br>
-  
-  
+</h1>
+
+<hr>
+
+<div align="center">
+
 | Linux - macOS | Windows |
 | :-----------: | :---- |
 [ ![Linux build status][1]][2] | [![Windows build status][3]][4] |
@@ -15,6 +19,7 @@
 
 [3]: https://ci.appveyor.com/api/projects/status/github/TIGER-PROJECT/tiger-editor
 [4]: https://ci.appveyor.com/project/armaldio/tiger-editor/branch/master
-</h1>
+
+</div>
 
 > The ultimate game editor
