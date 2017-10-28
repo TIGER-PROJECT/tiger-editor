@@ -31,7 +31,8 @@ install:
 
 build_script:
   #- yarn test
-  - yarn build
+  #- yarn build
+  - npm run build
 
 test: off
 
