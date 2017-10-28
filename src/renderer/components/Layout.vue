@@ -27,39 +27,40 @@
 
             let panning = false;
 
-            //Manage panning and selection
-            /* canvas.on('mouse:up', (e) => {
-                 console.log('Mouse up');
-                 if (e.e.which === MIDDLE_CLICK) {
-                     console.log('Middle click');
-                     panning          = false;
-                     canvas.selection = true;
-                 }
-             });*/
+            var ctrlDown            = false;
+            document.body.onkeydown = function (e) {
+                if (e.keyCode === 17) {
+                    ctrlDown = true;
+                }
+            };
+            document.body.onkeyup   = function (e) {
+                if (e.keyCode === 17) {
+                    ctrlDown = false;
+                }
+            };
 
-            var Container = document.getElementById('currentCanvas');
-            Container.addEventListener('click', (e) => {
-                console.log('event :', e);
-                /* if (e.e.which !== 2) {
-                     return;
-                 }
-                 e.preventDefault();
-                 alert('middle button pressed');*/
+            //Manage panning and selection
+            canvas.on('mouse:up', (e) => {
+                if (e.e.which === LEFT_CLICK && ctrlDown === true) {
+                    console.log('Left click');
+                    panning          = false;
+                    canvas.selection = true;
+                }
             });
 
             canvas.on('mouse:down', (e) => {
                 console.log('Mouse down');
                 console.log(e.e.which);
 
-                if (e.e.which === MIDDLE_CLICK) {
-                    console.log('Middle click');
+                if (e.e.which === LEFT_CLICK && ctrlDown === true) {
+                    console.log('Left click');
 
                     panning          = true;
                     canvas.selection = false;
                 }
             });
             canvas.on('mouse:move', (e) => {
-                if (panning && e && e.e && e.e.which === MIDDLE_CLICK) {
+                if (panning && e && e.e && e.e.which === LEFT_CLICK && ctrlDown === true) {
                     let units = 10;
                     let delta = new fabric.Point(e.e.movementX, e.e.movementY);
                     canvas.relativePan(delta);
@@ -254,6 +255,13 @@
     #currentCanvas {
         outline: 2px dashed grey;
         outline-offset: 5px;
+    }
+
+    .bottom-left-canvas {
+        mix-blend-mode: difference;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
 </style>
