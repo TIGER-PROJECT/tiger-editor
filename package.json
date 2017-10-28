@@ -57,7 +57,11 @@
       ]
     },
     "linux": {
-      "icon": "build/icons"
+      "icon": "build/icons",
+      "target": [
+        "zip"
+      ],
+      "category": "Development"
     }
   },
   "dependencies": {
