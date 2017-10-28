@@ -1,0 +1,34 @@
+{
+  "Projects": {
+    "New project": "newproject",
+    "Open": "open",
+    "Save": "save"
+  },
+  "View": {
+    "Save": "saveview",
+    "Load": "loadview",
+    "Set default view": "setdefaultview"
+  },
+  "Game": {
+    "Start": "start",
+    "Stop": "stop",
+    "Reload": "reload",
+    "Open in browser": "openinbrowser"
+  },
+  "Options": {
+    "Editor settings": "editorsettings",
+    "Account settings": "accountsettings",
+    "About": "about"
+  },
+  "Export": {
+    "Desktop": {
+      "Windows": "windows",
+      "Mac": "mac",
+      "Linux": "linux"
+    },
+    "Mobile": "mobile",
+    "Web": "web"
+  },
+  "Reopen last project": "reopen",
+  "Quick export": "quickexport"
+}

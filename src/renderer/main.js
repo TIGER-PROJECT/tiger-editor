@@ -5,6 +5,11 @@ import App from './App';
 import router from './router';
 import store from './store';
 
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
+
+import('../../node_modules/vuetify/dist/vuetify.css');
+
 if (!process.env.IS_WEB) {
     Vue.use(require('vue-electron'));
 }
@@ -24,13 +29,13 @@ const i18n = new VueI18n({
     messages
 });
 
-// ---
+// ----
 
 Vue.http = Vue.prototype.$http = axios;
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
-new Vue({
+const VueApp = new Vue({
     components: {App},
     router,
     store,
@@ -40,7 +45,8 @@ new Vue({
 
 // Hot updates
 if (module.hot) {
-    module.hot.accept([ '../locales/en.json' ], () => {
-        app.$i18n.setLocaleMessage('en', require('../locales/en.json').default);
-    });
+    //TODO fix language hot reload
+    /*module.hot.accept([ './locales/en.json' ], () => {
+        app.$i18n.setLocaleMessage('en', require('locales/en.json').default);
+    });*/
 }

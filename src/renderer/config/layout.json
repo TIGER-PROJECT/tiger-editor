@@ -1,0 +1,215 @@
+{
+  "settings": {
+    "hasHeaders": true,
+    "constrainDragToContainer": true,
+    "reorderEnabled": true,
+    "selectionEnabled": false,
+    "popoutWholeStack": false,
+    "blockedPopoutsThrowError": false,
+    "closePopoutsOnUnload": false,
+    "showPopoutIcon": false,
+    "showMaximiseIcon": true,
+    "showCloseIcon": false,
+    "responsiveMode": "onload",
+    "tabOverlapAllowance": 0,
+    "reorderOnTabMenuClick": true,
+    "tabControlOffset": 10
+  },
+  "dimensions": {
+    "borderWidth": 5,
+    "borderGrabWidth": 15,
+    "minItemHeight": 10,
+    "minItemWidth": 10,
+    "headerHeight": 20,
+    "dragProxyWidth": 300,
+    "dragProxyHeight": 200
+  },
+  "labels": {
+    "close": "close",
+    "maximise": "maximise",
+    "minimise": "minimise",
+    "popout": "open in new window",
+    "popin": "pop in",
+    "tabDropdown": "additional tabs"
+  },
+  "content": [
+    {
+      "type": "column",
+      "isClosable": true,
+      "reorderEnabled": true,
+      "title": "",
+      "width": 100,
+      "content": [
+        {
+          "type": "column",
+          "isClosable": true,
+          "reorderEnabled": true,
+          "title": "",
+          "width": 100,
+          "height": 100,
+          "content": [
+            {
+              "type": "stack",
+              "header": {},
+              "hasHeaders": false,
+              "isClosable": true,
+              "reorderEnabled": true,
+              "title": "",
+              "activeItemIndex": 0,
+              "height": 5.846774193548387,
+              "content": [
+                {
+                  "type": "component",
+                  "componentName": "Menu",
+                  "componentState": {
+                    "text": "This is the menu"
+                  },
+                  "isClosable": false,
+                  "reorderEnabled": false,
+                  "title": "Menu"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "isClosable": true,
+              "reorderEnabled": true,
+              "title": "",
+              "height": 94.15322580645162,
+              "content": [
+                {
+                  "type": "stack",
+                  "header": {},
+                  "isClosable": true,
+                  "reorderEnabled": true,
+                  "title": "",
+                  "activeItemIndex": 0,
+                  "width": 14.887402850274052,
+                  "content": [
+                    {
+                      "type": "component",
+                      "componentName": "Objects",
+                      "componentState": {
+                        "text": "Component 1"
+                      },
+                      "isClosable": false,
+                      "reorderEnabled": true,
+                      "title": "Objects"
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "isClosable": true,
+                  "reorderEnabled": true,
+                  "title": "",
+                  "width": 70.7511663651568,
+                  "content": [
+                    {
+                      "type": "stack",
+                      "isClosable": true,
+                      "reorderEnabled": true,
+                      "title": "",
+                      "activeItemIndex": 0,
+                      "width": 66.82740492070812,
+                      "height": 88.62876254180601,
+                      "content": [
+                        {
+                          "type": "component",
+                          "componentName": "Layout",
+                          "componentState": {
+                            "text": "Component 2"
+                          },
+                          "isClosable": false,
+                          "reorderEnabled": true,
+                          "title": "Layout"
+                        },
+                        {
+                          "type": "component",
+                          "componentName": "Editor",
+                          "componentState": {
+                            "text": "Component 2"
+                          },
+                          "isClosable": false,
+                          "reorderEnabled": true,
+                          "title": "Editor"
+                        },
+                        {
+                          "type": "component",
+                          "componentName": "Preview",
+                          "componentState": {
+                            "text": "Component 2"
+                          },
+                          "isClosable": false,
+                          "reorderEnabled": true,
+                          "title": "Preview"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "stack",
+                      "header": {},
+                      "isClosable": true,
+                      "reorderEnabled": true,
+                      "title": "",
+                      "activeItemIndex": 1,
+                      "height": 11.371237458193983,
+                      "content": [
+                        {
+                          "type": "component",
+                          "componentName": "EditorConsole",
+                          "componentState": {
+                            "text": "Component 2"
+                          },
+                          "isClosable": false,
+                          "reorderEnabled": true,
+                          "title": "Editor Console"
+                        },
+                        {
+                          "type": "component",
+                          "componentName": "GameConsole",
+                          "componentState": {
+                            "text": "Component 2"
+                          },
+                          "isClosable": false,
+                          "reorderEnabled": true,
+                          "title": "Game Console"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "stack",
+                  "header": {},
+                  "isClosable": true,
+                  "reorderEnabled": true,
+                  "title": "",
+                  "activeItemIndex": 0,
+                  "width": 14.361430784569148,
+                  "content": [
+                    {
+                      "type": "component",
+                      "componentName": "Properties",
+                      "componentState": {
+                        "text": "Component 3"
+                      },
+                      "isClosable": false,
+                      "reorderEnabled": true,
+                      "title": "Properties"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "isClosable": true,
+  "reorderEnabled": true,
+  "title": "",
+  "openPopouts": [],
+  "maximisedItemId": null
+}

@@ -1,5 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 
+app.commandLine.appendSwitch('inspect', '5858');
+
 /**
  * Set `__static` path to static files in production
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-static-assets.html
@@ -13,19 +15,22 @@ const winURL = process.env.NODE_ENV === 'development'
     ? `http://localhost:9080`
     : `file://${__dirname}/index.html`;
 
+console.log('Win rul : ', winURL);
+
 function createWindow () {
     /**
-	 * Initial window options
-	 */
+     * Initial window options
+     */
     mainWindow = new BrowserWindow({
         height        : 563,
         useContentSize: true,
         width         : 1000,
-        icon: 'assets/icons/github/icon.png',
+        icon          : 'assets/icons/github/icon.png'
     });
 
     mainWindow.loadURL(winURL);
     mainWindow.maximize();
+    mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', () => {
         mainWindow = null;

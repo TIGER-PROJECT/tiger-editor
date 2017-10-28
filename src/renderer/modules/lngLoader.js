@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import log from './logger';
+import log from './logger/logger';
 
 export default class LngLoader
 {
     constructor (p) {
         //Path is relative to root
-        this.path = p || 'src/locales';
+        this.path = p || __static + '/locales';
     }
 
     get () {

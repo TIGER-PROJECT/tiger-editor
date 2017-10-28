@@ -1,10 +1,19 @@
 <template>
-    <p> {{ $t("app.name") }}</p>
+    <golden-layout ref="layout"></golden-layout>
 </template>
 
-<style>
-    html, body {
-        background-color: #424242;
-        color: #fff;
-    }
-</style>
+<script>
+    import goldenLayout from './GoldenLayout.vue';
+
+    export default {
+        components: {
+            goldenLayout
+        },
+        mounted () {
+            this.$refs.layout.init();
+        }
+    };
+</script>
+
+<style></style>
+

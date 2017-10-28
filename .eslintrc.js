@@ -9,7 +9,10 @@ module.exports = {
         node   : true
     },
     globals      : {
-        __static: true
+        __static: true,
+        "$": true,
+        "jQuery": true,
+        'GoldenLayout': true
     },
     plugins      : [
         'html'
