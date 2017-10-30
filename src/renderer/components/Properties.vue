@@ -6,8 +6,8 @@
                         label="Content"
                         v-model="inputContent"
                 ></v-text-field>
+                <button @click="addLine">Add line</button>
             </v-form>
-            <p>{{ inputContent }}</p>
         </v-layout>
     </v-container>
 </template>
@@ -16,8 +16,13 @@
     export default {
         data () {
             return {
-                inputContent: 'Properties'
+                inputContent: 'my line'
             };
+        },
+        methods: {
+            addLine () {
+                this.$store.dispatch('addLine', this.inputContent);
+            }
         }
     };
 </script>

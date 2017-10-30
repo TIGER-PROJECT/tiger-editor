@@ -3,17 +3,27 @@ const state = {
 };
 
 const mutations = {
-    addLine(line) {
-        this.EditorDebugLines.push(line);
+    ADD_LINE(state, line) {
+        state.EditorDebugLines.push(line);
     }
 };
 
 const actions = {
+    addLine(store, line)
+    {
+        store.commit('ADD_LINE', line);
+    }
+};
 
+const getters = {
+    EditorDebugLines(state) {
+        return state.EditorDebugLines;
+    }
 };
 
 export default {
     state,
     mutations,
-    actions
+    actions,
+    getters
 };

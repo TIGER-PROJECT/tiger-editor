@@ -1,22 +1,19 @@
 <template>
     <v-container fluid>
         <v-layout row wrap>
-
-            <v-list>
-                <template v-for="line in EditorDebugLines">
-                    <v-list-tile>
-                        <v-list-tile-content>
-                            <v-list-tile-title v-html="line"></v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                </template>
-            </v-list>
-
+            <template v-for="(line, index) in lines">
+                <div>
+                    <v-chip label>Label</v-chip>
+                    <p>{{ line }}</p>
+                </div>
+            </template>
         </v-layout>
     </v-container>
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
+
     export default {
         data () {
             return {
@@ -24,13 +21,16 @@
             };
         },
         computed: {
-            EditorDebugLines() {
-                return this.$store.getters.EditorDebugLines;
-            }
+            ...mapGetters({
+                lines: 'EditorDebugLines'
+            })
         }
     };
 </script>
 
-<style>
+<style scoped>
+    .fluid {
+        width: 100%;
+    }
 </style>
 
