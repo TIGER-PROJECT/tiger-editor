@@ -24,6 +24,6 @@ module.exports = {
         'indent'               : [ 'error', 4, {SwitchCase: 1} ],
         'quotes'               : [ 'error', 'single', {'allowTemplateLiterals': true} ],
         'prefer-arrow-callback': [ 'error' ],
-        'arrow-parens'         : [ 'error', 'always' ]
+        'arrow-parens'         : 0
     }
 };

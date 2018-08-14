@@ -1,5 +1,5 @@
 <template>
-    <v-app dark>
+    <v-app :dark="theme">
         <!--<v-system-bar window >
             <v-spacer></v-spacer>
             <v-icon>remove</v-icon>
@@ -7,19 +7,23 @@
             <v-icon>close</v-icon>
         </v-system-bar>-->
 
-        <v-dialog v-model="aboutDialog">
+        <window-menu></window-menu>
+
+        <v-dialog v-model="showAbout" max-width="600px" persistent>
             <v-card>
-                <v-card-media src="static/img/tiger.png" height="250px"></v-card-media>
-                <v-card-title class="headline">TIGER Editor</v-card-title>
-                <v-card-text>
-                    Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
-                        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                        target="_blank">CC 3.0 BY</a>
-                </v-card-text>
+                <v-card-media src="static/img/tiger.png" contain height="100px"></v-card-media>
+                <v-card-title class="headline">TIGERR Editor</v-card-title>
                 <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn color="blue darken-1" @click.native="aboutDialog = false">Ok</v-btn>
+                    <v-card-text>
+                        Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
+                            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                            target="_blank">CC 3.0 BY</a>
+                    </v-card-text>
+                    <v-btn color="blue darken-1"
+                           @click.native="$store.dispatch('showDialog', {modal:'about', show:false })">Ok
+                    </v-btn>
                 </v-card-actions>
             </v-card>
         </v-dialog>
@@ -29,12 +33,24 @@
 </template>
 
 <script>
+    import WindowMenu from './components/WindowMenu.vue';
+
     export default {
-        name: 'tiger-editor',
+        name      : 'tiger-editor',
+        components: {
+            WindowMenu
+        },
         data () {
-            return {
-                aboutDialog: false
-            };
+            return {};
+        },
+        computed  : {
+            theme () {
+                return 'dark';
+                return this.$store.getters.getAppTheme();
+            },
+            showAbout () {
+                return this.$store.getters.modals[ 'about' ];
+            }
         }
     };
 </script>

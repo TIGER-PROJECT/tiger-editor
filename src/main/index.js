@@ -23,6 +23,8 @@ function createWindow () {
      */
     mainWindow = new BrowserWindow({
         height        : 563,
+        minWidth      : 720,
+        minHeight     : 600,
         useContentSize: true,
         width         : 1000,
         icon          : 'assets/icons/github/icon.png'

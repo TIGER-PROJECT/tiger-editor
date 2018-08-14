@@ -82,17 +82,25 @@ acorn@^4.0.3:
   version "4.0.13"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
-acorn@^5.0.0, acorn@^5.1.1:
+acorn@^5.0.0:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.2.tgz#911cb53e036807cf0fa778dc5d370fbd864246d7"
+
+acorn@^5.1.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.2.1.tgz#317ac7821826c22c702d66189ab8359675f135d7"
 
 after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
-ajv-keywords@^2.0.0, ajv-keywords@^2.1.0:
+ajv-keywords@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-2.1.0.tgz#a296e17f7bfae7c1ce4f7e0de53d29cb32162df0"
+
+ajv-keywords@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
 
 ajv@^4.9.1:
   version "4.11.8"
@@ -173,13 +181,13 @@ anymatch@^1.3.0:
     micromatch "^2.1.5"
     normalize-path "^2.0.0"
 
-app-package-builder@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/app-package-builder/-/app-package-builder-1.3.1.tgz#191eddb4e3f8be754f77469994447bed3891449e"
+app-package-builder@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/app-package-builder/-/app-package-builder-1.3.3.tgz#252489ebd9e99fded822d01c7d6042d37aa6d844"
   dependencies:
     bluebird-lst "^1.0.5"
-    builder-util "^3.0.13"
-    builder-util-runtime "^2.3.0"
+    builder-util "^3.2.0"
+    builder-util-runtime "^2.5.0"
     fs-extra-p "^4.4.4"
     int64-buffer "^0.1.9"
     js-yaml "^3.10.0"
@@ -1499,22 +1507,22 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-builder-util-runtime@2.4.0, builder-util-runtime@^2.3.0, builder-util-runtime@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/builder-util-runtime/-/builder-util-runtime-2.4.0.tgz#403b3c17aed596752a56e4a7d696c5eee59142c1"
+builder-util-runtime@2.5.0, builder-util-runtime@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/builder-util-runtime/-/builder-util-runtime-2.5.0.tgz#22373d4faab8d89e0b077630aef76538deb38476"
   dependencies:
     bluebird-lst "^1.0.5"
     debug "^3.1.0"
     fs-extra-p "^4.4.4"
     sax "^1.2.4"
 
-builder-util@3.1.0, builder-util@^3.0.13:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/builder-util/-/builder-util-3.1.0.tgz#f89f1f41f8d114ab317f7ed3a7af349360971230"
+builder-util@3.2.0, builder-util@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/builder-util/-/builder-util-3.2.0.tgz#08900f046c6b09c22a1f235f18644ae9eb963bc4"
   dependencies:
     "7zip-bin" "^2.2.7"
     bluebird-lst "^1.0.5"
-    builder-util-runtime "^2.4.0"
+    builder-util-runtime "^2.5.0"
     chalk "^2.3.0"
     debug "^3.1.0"
     fs-extra-p "^4.4.4"
@@ -1647,14 +1655,6 @@ chalk@1.0.0:
     has-ansi "^1.0.3"
     strip-ansi "^2.0.1"
     supports-color "^1.3.0"
-
-chalk@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.1.0.tgz#ac5becf14fa21b99c6c92ca7a7d7cfd5b17e743e"
-  dependencies:
-    ansi-styles "^3.1.0"
-    escape-string-regexp "^1.0.5"
-    supports-color "^4.0.0"
 
 chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
@@ -2140,8 +2140,8 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     sha.js "^2.4.8"
 
 cross-env@^5.0.5:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.0.tgz#1f12d6b3777d5847dcf9cf39fbee3c6a76dd5058"
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.1.tgz#b6d8ab97f304c0f71dae7277b75fe424c08dfa74"
   dependencies:
     cross-spawn "^5.1.0"
     is-windows "^1.0.0"
@@ -2299,10 +2299,6 @@ csso@~2.3.1:
   dependencies:
     clap "^1.0.9"
     source-map "^0.5.3"
-
-cuint@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/cuint/-/cuint-0.2.2.tgz#408086d409550c2631155619e9fa7bcadc3b991b"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -2496,12 +2492,12 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dmg-builder@2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/dmg-builder/-/dmg-builder-2.1.3.tgz#823b0560314312e59725ec779a4373d051ae1617"
+dmg-builder@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/dmg-builder/-/dmg-builder-2.1.5.tgz#f1f7d68d75cfb834e793c0681c7f50ced0a3038d"
   dependencies:
     bluebird-lst "^1.0.5"
-    builder-util "^3.0.13"
+    builder-util "^3.2.0"
     debug "^3.1.0"
     fs-extra-p "^4.4.4"
     iconv-lite "^0.4.19"
@@ -2647,25 +2643,24 @@ ejs@^2.5.7, ejs@~2.5.6:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.7.tgz#cc872c168880ae3c7189762fd5ffc00896c9518a"
 
 electron-builder@^19.19.1:
-  version "19.41.1"
-  resolved "https://registry.yarnpkg.com/electron-builder/-/electron-builder-19.41.1.tgz#e58279166be4a2650cd3af6a2492ba1b92968285"
+  version "19.43.3"
+  resolved "https://registry.yarnpkg.com/electron-builder/-/electron-builder-19.43.3.tgz#87b1d39a50456a989b273a7effc04498dd9c4b6a"
   dependencies:
     "7zip-bin" "^2.2.7"
-    app-package-builder "1.3.1"
+    app-package-builder "1.3.3"
     asar-integrity "0.2.3"
     async-exit-hook "^2.0.1"
     bluebird-lst "^1.0.5"
-    builder-util "3.1.0"
-    builder-util-runtime "2.4.0"
+    builder-util "3.2.0"
+    builder-util-runtime "2.5.0"
     chalk "^2.3.0"
     chromium-pickle-js "^0.2.0"
-    cuint "^0.2.2"
     debug "^3.1.0"
-    dmg-builder "2.1.3"
+    dmg-builder "2.1.5"
     ejs "^2.5.7"
     electron-download-tf "4.3.4"
     electron-osx-sign "0.4.7"
-    electron-publish "19.40.0"
+    electron-publish "19.43.0"
     fs-extra-p "^4.4.4"
     hosted-git-info "^2.5.0"
     is-ci "^1.0.10"
@@ -2775,14 +2770,14 @@ electron-osx-sign@0.4.7:
     minimist "^1.2.0"
     plist "^2.1.0"
 
-electron-publish@19.40.0:
-  version "19.40.0"
-  resolved "https://registry.yarnpkg.com/electron-publish/-/electron-publish-19.40.0.tgz#e7b48bf3c033d9ffa68254467fab0506d81773af"
+electron-publish@19.43.0:
+  version "19.43.0"
+  resolved "https://registry.yarnpkg.com/electron-publish/-/electron-publish-19.43.0.tgz#3a5b8f6317a2a83faa008c26594220ffb4006664"
   dependencies:
     bluebird-lst "^1.0.5"
-    builder-util "^3.0.13"
-    builder-util-runtime "^2.4.0"
-    chalk "2.1.0"
+    builder-util "^3.2.0"
+    builder-util-runtime "^2.5.0"
+    chalk "^2.3.0"
     fs-extra-p "^4.4.4"
     mime "^2.0.3"
 
@@ -3044,8 +3039,8 @@ eslint-scope@^3.7.1:
     estraverse "^4.1.1"
 
 eslint@^4.4.1:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.9.0.tgz#76879d274068261b191fe0f2f56c74c2f4208e8b"
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.10.0.tgz#f25d0d7955c81968c2309aa5c9a229e045176bb7"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
@@ -4024,8 +4019,8 @@ ieee754@^1.1.4:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
 
 ignore@^3.3.3:
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.6.tgz#b6f3196b38ed92f0c86e52f6f79b7fc4c8266c8d"
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
 import-lazy@^2.1.0:
   version "2.1.0"
@@ -4478,8 +4473,8 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
 jschardet@^1.4.2:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.5.1.tgz#c519f629f86b3a5bedba58a88d311309eec097f9"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.6.0.tgz#c7d1a71edcff2839db2f9ec30fc5d5ebd3c1a678"
 
 jsesc@^1.3.0:
   version "1.3.0"
@@ -5224,8 +5219,10 @@ no-case@^2.2.0:
     lower-case "^1.1.1"
 
 node-abi@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.1.1.tgz#c9cda256ec8aa99bcab2f6446db38af143338b2a"
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.1.2.tgz#4da6caceb6685fcd31e7dd1994ef6bb7d0a9c0b2"
+  dependencies:
+    semver "^5.4.1"
 
 node-dir@^0.1.10:
   version "0.1.17"
@@ -6768,8 +6765,8 @@ sntp@1.x.x:
     hoek "2.x.x"
 
 sntp@2.x.x:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/sntp/-/sntp-2.0.2.tgz#5064110f0af85f7cfdb7d6b67a40028ce52b4b2b"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sntp/-/sntp-2.1.0.tgz#2c6cec14fedc2222739caf9b5c3d85d1cc5a2cc8"
   dependencies:
     hoek "4.x.x"
 
@@ -7587,6 +7584,12 @@ void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
+vue-chat-scroll@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vue-chat-scroll/-/vue-chat-scroll-1.2.1.tgz#54f123004b887d91f2f7fb69b9bebdf6f61ea9b4"
+  dependencies:
+    vue "^2.1.10"
+
 vue-electron@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/vue-electron/-/vue-electron-1.0.6.tgz#e798e03180b8933539defe31f92e53b9242b9406"
@@ -7655,7 +7658,7 @@ vue-tree-list@^1.0.2:
   dependencies:
     jquery "^3.2.1"
 
-vue@^2.3.3:
+vue@^2.1.10, vue@^2.3.3:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.2.tgz#fd367a87bae7535e47f9dc5c9ec3b496e5feb5a4"
 

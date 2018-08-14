@@ -49,28 +49,6 @@
           "height": 100,
           "content": [
             {
-              "type": "stack",
-              "header": {},
-              "hasHeaders": false,
-              "isClosable": true,
-              "reorderEnabled": true,
-              "title": "",
-              "activeItemIndex": 0,
-              "height": 5.846774193548387,
-              "content": [
-                {
-                  "type": "component",
-                  "componentName": "Menu",
-                  "componentState": {
-                    "text": "This is the menu"
-                  },
-                  "isClosable": false,
-                  "reorderEnabled": false,
-                  "title": "Menu"
-                }
-              ]
-            },
-            {
               "type": "row",
               "isClosable": true,
               "reorderEnabled": true,
@@ -158,6 +136,7 @@
                         {
                           "type": "component",
                           "componentName": "EditorConsole",
+                          "cssClass": "console",
                           "componentState": {
                             "text": "Component 2"
                           },
@@ -167,6 +146,7 @@
                         },
                         {
                           "type": "component",
+                          "cssClass": "console",
                           "componentName": "GameConsole",
                           "componentState": {
                             "text": "Component 2"

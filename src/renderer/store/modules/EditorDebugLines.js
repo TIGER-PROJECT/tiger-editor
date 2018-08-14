@@ -4,7 +4,7 @@ const state = {
 
 const mutations = {
     ADD_LINE(state, line) {
-        state.EditorDebugLines.push(line);
+        state.EditorDebugLines.unshift(line);
     }
 };
 

@@ -11,9 +11,11 @@
             </div>
         </div>
         <div v-else>
-            <v-container fluid fill-height>
-                <v-layout>
-                    <p>No projects loaded</p>
+            <v-container fill-height>
+                <v-layout row wrap align-center>
+                    <v-flex class="text-xs-center">
+                            <p>No projects loaded</p>
+                    </v-flex>
                 </v-layout>
             </v-container>
         </div>

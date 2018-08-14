@@ -4,18 +4,23 @@ import axios from 'axios';
 import App from './App';
 import router from './router';
 import store from './store';
-
+import VueI18n from 'vue-i18n';
 import Vuetify from 'vuetify';
-Vue.use(Vuetify);
+import VueChatScroll from 'vue-chat-scroll';
 
 import('../../node_modules/vuetify/dist/vuetify.css');
+
+// UI
+Vue.use(Vuetify);
+
+// Directives
+Vue.use(VueChatScroll);
 
 if (!process.env.IS_WEB) {
     Vue.use(require('vue-electron'));
 }
 
 // Internationalization
-import VueI18n from 'vue-i18n';
 
 import LngLoader from './modules/lngLoader';
 

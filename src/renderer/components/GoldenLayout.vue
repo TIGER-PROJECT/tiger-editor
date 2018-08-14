@@ -2,8 +2,6 @@
     <div>
         <div id="golden-layout"></div>
 
-        <top-menu id="menu"></top-menu>
-
         <objects-list id="objects"></objects-list>
         <layout ref="layout" id="layout"></layout>
         <editor id="editor"></editor>
@@ -20,7 +18,6 @@
     import * as GoldenLayout from 'golden-layout';
     import config from '../config/layout.json';
 
-    import TopMenu from './Menu.vue';
     import ObjectsList from './ObjectsList.vue';
     import Layout from './Layout.vue';
     import Editor from './Editor.vue';
@@ -38,8 +35,7 @@
             Preview,
             EditorConsole,
             GameConsole,
-            Properties,
-            TopMenu
+            Properties
         },
         methods   : {
             init () {
@@ -63,14 +59,11 @@
 
                 layout.registerComponent('EditorConsole', (container, state) => {
                     container.getElement().html($('#editor-console'));
+                    container.getElement().css('overflow-y', 'scroll');
                 });
 
                 layout.registerComponent('GameConsole', (container, state) => {
                     container.getElement().html($('#game-console'));
-                });
-
-                layout.registerComponent('Menu', (container, state) => {
-                    container.getElement().html($('#menu'));
                 });
 
                 layout.registerComponent('Properties', (container, state) => {
